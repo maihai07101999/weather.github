@@ -30,6 +30,7 @@
             <router-link tag="a" class="nav-link" to="/login"
               >login</router-link>
           </li>
+          <li> {{username}}</li>
         </ul>
       </div>
     </nav>
@@ -37,6 +38,7 @@
 </template>
 <script>
 export default {
+  props:['username'],
   name: 'app4'
 }
 </script>

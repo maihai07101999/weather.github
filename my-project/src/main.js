@@ -6,7 +6,7 @@ import VueRouter from 'vue-router'
 // import router from './router'
 import { routes } from './routes'
 import { BootstrapVue } from 'bootstrap-vue'
-import { store } from './store/store'
+import store from './store'
 import VueResource from 'vue-resource'
 // Import Bootstrap an BootstrapVue CSS files (order is important)
 import 'bootstrap/dist/css/bootstrap.css'

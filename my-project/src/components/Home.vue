@@ -23,11 +23,21 @@
      </div> <!-- end search-->
       <div class="nd">
        <ul>
-         <li>noidung</li>
+         <li v-for="todo in todos" :key="todo.id"> {{todo.name}} : {{ todo.address}}</li>
        </ul>
      </div>
   </div>
 </template>
+<script>
+export default {
+  name: "#app6",
+  computed: {
+    todos(){
+      return this.$store.state.todos
+    }
+  }
+}
+</script>
 <style scoped>
   .menu{
     width: 13%;
@@ -45,16 +55,7 @@
      border-top: 1px solid aliceblue ;
 
   }
-  li{
-    list-style: none;
-    padding:20px 30px;
-    text-align: left;
-    color: aliceblue;
-    cursor: pointer;
-  }
-  li:hover{
-    color:rgb(173, 139, 94);
-  }
+ 
   .logo{
     color: aliceblue;
   }

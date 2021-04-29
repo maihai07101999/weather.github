@@ -64,10 +64,11 @@
                 <b-form-checkbox value="that">Check that out</b-form-checkbox>
               </b-form-checkbox-group>
             </b-form-group>
-
+            <h2 id="form-vue">Tổng tiền thanh toán của quý khách là: </h2>
             <b-button type="submit" variant="primary">Submit</b-button>
             <b-button type="reset" variant="danger">Reset</b-button>
           </b-form>
+         
         </div>
       </div>
     </div>
@@ -76,6 +77,8 @@
 
 <script>
 export default {
+  props:['username'],
+ name:"app2",
   data() {
     return {
       form: {

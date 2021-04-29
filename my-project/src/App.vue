@@ -2,6 +2,7 @@
   <div id="app">
    <Header />
    <!-- <Result /> -->
+
     <router-view/>
   </div>
 </template>
@@ -9,13 +10,19 @@
 <script>
 import Header from './components/layout/Header'
 // import Result from './components/user/Result'
-// import FormVue from './components/layout/FormVue'
+// import FormVue from './components/FormVue'
 
 export default {
   name: 'App',
   components: {
-    Header,
-    // Result
+    Header
+  },
+  data(){
+    return{
+      msg: {
+        user: 'hello các bạn'
+      }
+    }
   }
 }
 </script>
